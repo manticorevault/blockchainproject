@@ -1,0 +1,711 @@
+{
+    "_format": "hh-sol-cache-2",
+    "files": {
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/contracts/TicketNFT.sol": {
+        "lastModificationDate": 1680663326545,
+        "contentHash": "868f013f3a4403b7adf8a7cdead47725",
+        "sourceName": "contracts/TicketNFT.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol",
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+          "@openzeppelin/contracts/utils/Counters.sol",
+          "@openzeppelin/contracts/utils/Address.sol",
+          "@openzeppelin/contracts/access/Ownable.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.7"
+        ],
+        "artifacts": [
+          "TicketNFT"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+        "lastModificationDate": 1680643722766,
+        "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+        "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "Counters"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+        "lastModificationDate": 1680643722766,
+        "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
+        "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [],
+        "versionPragmas": [
+          "^0.8.1"
+        ],
+        "artifacts": [
+          "Address"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+        "lastModificationDate": 1680643722710,
+        "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+        "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../utils/Context.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "Ownable"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol": {
+        "lastModificationDate": 1680643729710,
+        "contentHash": "d29e32d2fc8b7e02c8a00f69b3223411",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../ERC721.sol",
+          "../../common/ERC2981.sol",
+          "../../../utils/introspection/ERC165.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "ERC721Royalty"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+        "lastModificationDate": 1680643729710,
+        "contentHash": "8af32effd0536e2971ff8496812a5016",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../ERC721.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "ERC721URIStorage"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
+        "lastModificationDate": 1680643729710,
+        "contentHash": "212e86880d210b6cac8c3eb0cd6b1fad",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../ERC721.sol",
+          "./IERC721Enumerable.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "ERC721Enumerable"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+        "lastModificationDate": 1680643722766,
+        "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+        "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "Context"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+        "lastModificationDate": 1680643727822,
+        "contentHash": "f7f4f78c31f28534852e5c56000a25af",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "./IERC721.sol",
+          "./IERC721Receiver.sol",
+          "./extensions/IERC721Metadata.sol",
+          "../../utils/Address.sol",
+          "../../utils/Context.sol",
+          "../../utils/Strings.sol",
+          "../../utils/introspection/ERC165.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "ERC721"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/common/ERC2981.sol": {
+        "lastModificationDate": 1680643727826,
+        "contentHash": "f995d6f70022823e60e85f41959c801d",
+        "sourceName": "@openzeppelin/contracts/token/common/ERC2981.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../../interfaces/IERC2981.sol",
+          "../../utils/introspection/ERC165.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "ERC2981"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+        "lastModificationDate": 1680643727838,
+        "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+        "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "./IERC165.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "ERC165"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+        "lastModificationDate": 1680643722766,
+        "contentHash": "396031251978f8febfd90cb62cb240ec",
+        "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "./math/Math.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "Strings"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+        "lastModificationDate": 1680643727826,
+        "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "IERC721Receiver"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+        "lastModificationDate": 1680643727826,
+        "contentHash": "eb7e61db29f31d88b3c1cef1b063d338",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../../utils/introspection/IERC165.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "IERC721"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+        "lastModificationDate": 1680643729718,
+        "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../IERC721.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "IERC721Metadata"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+        "lastModificationDate": 1680643727838,
+        "contentHash": "b9c58920ce74d6dc819161786112e7ee",
+        "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "Math"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+        "lastModificationDate": 1680643727842,
+        "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+        "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "IERC165"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/interfaces/IERC2981.sol": {
+        "lastModificationDate": 1680643722766,
+        "contentHash": "608566bc5327454ba54e487e7c226ff6",
+        "sourceName": "@openzeppelin/contracts/interfaces/IERC2981.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../utils/introspection/IERC165.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "IERC2981"
+        ]
+      },
+      "/home/lucholeonel/CODE/EncodeClub-FinalProject/hardhat/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
+        "lastModificationDate": 1680643729718,
+        "contentHash": "f4dd06783f321aa26179bc2b6e361c29",
+        "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+        "solcConfig": {
+          "version": "0.8.18",
+          "settings": {
+            "optimizer": {
+              "enabled": false,
+              "runs": 200
+            },
+            "outputSelection": {
+              "*": {
+                "*": [
+                  "abi",
+                  "evm.bytecode",
+                  "evm.deployedBytecode",
+                  "evm.methodIdentifiers",
+                  "metadata"
+                ],
+                "": [
+                  "ast"
+                ]
+              }
+            }
+          }
+        },
+        "imports": [
+          "../IERC721.sol"
+        ],
+        "versionPragmas": [
+          "^0.8.0"
+        ],
+        "artifacts": [
+          "IERC721Enumerable"
+        ]
+      }
+    }
+  }
